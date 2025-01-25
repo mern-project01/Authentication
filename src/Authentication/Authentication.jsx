@@ -55,6 +55,7 @@ const auth = getAuth(app);
   return (
     <div>
       <h1>User Name:{NewUser?.displayName || NewUser?.uid} </h1>
+      <img src={NewUser?.photoURL}/>
         <div className='text-center'>
             <button onClick={handleByGamil} className='btn btn-success my-20'>Login With Google</button>
             <button onClick={handleByGithub} className='btn btn-secondary mx-2 my-20'>Login With Github</button>
